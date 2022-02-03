@@ -1,7 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Roboto:wght@100&display=swap');
 *, *::before,::after{
-
-    font-family: Raleway;
-   
+    font-family: 'Roboto', sans-serif;
  }
  
 html{
@@ -10,10 +9,8 @@ html{
     background-image:linear-gradient(to bottom left ,#29c1dd,#5a52be );
 }
 html, body{
-
     margin: 0;
     padding: 0;
-
 }
 .main-header{
     font-size: 1.2em;
@@ -75,7 +72,7 @@ margin-right: 150px auto;
  
     color:white;
     border: 1px solid rgba(255,255,255,.3) ;
-    border-radius: 0;
+    border-radius: 5px;
     font-weight: lighter;
     padding-left: 1em;
     padding-right: 1em;
@@ -84,30 +81,92 @@ margin-right: 150px auto;
 }
 
 .main-container{
+   
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 5%;
     width: 80%;
+    margin: auto;
+   
 }
 
 .pricing-container,.singup-container{
-    border: 1px solid;
+   
     font-size: 1.2em;
-    padding: 2%;
-    width:450px;
+    width:320px;
+    height:350px;
+    margin: auto;
+    padding: 10px;
+}
+.inputs-container{
+    margin:auto;
+}
+
+.inputs{
+    width: 60% auto;
+    border-radius: 5px;
+    border-style: none;
+    margin: 20px auto;
+    margin-bottom: 20px;
+    display: block;
+    width: 250px;
+    height:30px;
+    background-color: #f2f2f2;
 }
 .type-container{
-    text-align: center;
-    align-items: right;
-    display: inline;
-
+    display: block;
+    margin: auto;
+    width: 250px;
+    height:30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #f2f2f2;
 }
 .btn{
-    display: inline;
-    width: 200px;
+    border-style: none;
+    border-radius: 50px;
+    margin: auto;
+    display: block;
+    width: 250px;
+    height:40px;
+    font-size: .9em;
+    font-style: none;
+    color: white;
+    background-color:#1e81ff;
 }
+.pricing-container{
 
-.inputs-container{
-    width: 200px ;
-    align-items: center;
+    margin-top: 80px;
+   
+    width:400px;
+    color: white;
+    font-style: none;
+}
+.pricing-tilte{
+    margin:0;
+    padding:0;
+}
+.singup-container{
+    border-radius:  5px;
+    box-shadow:#5a52be;
+    margin: auto;
+    background-color: white;
+}
+.singup-tilte{
+  font-style: none;
+  font-size: 1.3em;
+  text-align: center;
+  font-weight: lighter;
+}
+.pricing-btn{
+    width:150px;
+    font-size: small;
+    align-items: left;
+}
+.pricing-p{
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
 }
