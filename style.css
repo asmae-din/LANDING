@@ -1,7 +1,6 @@
 *{
-    box-sizing:border-box; 
+    
     font-family: Raleway;
-
  }
 html{
     background:#29c1dd;
@@ -10,51 +9,61 @@ html{
 html, body{
     margin: 0;
     padding: 0;
-    max-height:900px;
+    
 }
-.main-header{
-    border: 2px solid;
-    font-size: 1.2em;
-    font-weight:lighter;
-}
-.main-nav{
- position: right;
-}
-
 .nav ul{
-    margin: 0;
-    padding: 0;
-    text-align: right;
-    border: 4px solid ;
-    margin-right: 200px fixed;
-    height: 80px;
-}
 
+    margin-top: 40px;
+
+}
 .nav li{
     display: inline;
-    border: 1px solid;
-
+    margin-left:10px;
+   
 }
 .nav a{
-    display: inline-block;
-    text-decoration: none;
-    margin: 30px 0px 30px 20px;
+
     padding: .5em;
     color:white;
-    border: 1px solid;
-    
+    text-decoration: none;
 }
 .nav a:hover{
     background-color: rgba(255,255,255,.3);
+    border-radius: 2px;
+}
+.nav a :last-child{
+    background-color: none;
+}
+.main-nav{
+    font-size: 1.1m;
+    font-weight:lighter;
+
+}
+.con{
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.main-container{
-    border: 1px solid;
+.left-nav{
+margin-left: 0;
+margin-right: 150px;
+
+}
+.right-nav{
  
 }
+.get-started-btn{
 
-.content-section{
-    margin: 0 auto;
-    padding: 0 1.5em;
-
+    color:white;
+    border: 1px solid rgba(255,255,255,.3); ;
+    border-radius: 0;
+    font-weight: lighter;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top:.5em;
+    padding-bottom: .5em;
 }
+.get-started-btn:hover{
+    background-color: rgba(255,255,255,.3);
+}
+
