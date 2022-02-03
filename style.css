@@ -1,13 +1,19 @@
 *{
+<<<<<<< HEAD
     box-sizing:border-box; 
     font-family: Raleway;
 
+=======
+    
+    font-family: Raleway;
+>>>>>>> main
  }
 html{
     background:#29c1dd;
     background:linear-gradient(to left bottom,#29c1dd,#5a52be );
 }
 html, body{
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
     max-height:900px;
@@ -34,10 +40,28 @@ html, body{
     display: inline;
     border: 1px solid;
 
+=======
+    margin: 0;
+    padding: 0;
+    
+}
+.nav ul{
+
+    margin-top: 40px;
+
+}
+.nav li{
+    display: inline;
+    margin-left:10px;
+   
+>>>>>>> main
 }
 .nav a{
-    display: inline-block;
+
+    padding: .5em;
+    color:white;
     text-decoration: none;
+<<<<<<< HEAD
     margin: 30px 0px 30px 20px;
     padding: .5em;
     color:white;
@@ -47,14 +71,58 @@ html, body{
 .nav a:hover{
     background-color: rgba(255,255,255,.3);
 }
+=======
+}
+.nav a:hover{
+    background-color: rgba(255,255,255,.3);
+    border-radius: 2px;
+}
+.nav a :last-child{
+    background-color: none;
+}
+.main-nav{
+    font-size: 1.1m;
+    font-weight:lighter;
+
+}
+.con{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left-nav{
+margin-left: 0;
+margin-right: 150px;
+>>>>>>> main
 
 .main-container{
     border: 1px solid;
  
 }
+<<<<<<< HEAD
 
 .content-section{
     margin: 0 auto;
     padding: 0 1.5em;
 
 }
+=======
+.right-nav{
+ 
+}
+.get-started-btn{
+
+    color:white;
+    border: 1px solid rgba(255,255,255,.3); ;
+    border-radius: 0;
+    font-weight: lighter;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top:.5em;
+    padding-bottom: .5em;
+}
+.get-started-btn:hover{
+    background-color: rgba(255,255,255,.3);
+}
+
+>>>>>>> main
