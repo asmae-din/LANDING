@@ -7,6 +7,8 @@ html{
     padding: 0;
     margin: 0;
     background-image:linear-gradient(to bottom left ,#29c1dd,#5a52be );
+    max-width: 100%;
+    height: 100%;
 }
 html, body{
     margin: 0;
@@ -95,51 +97,13 @@ margin-right: 150px auto;
    
     font-size: 1.2em;
     width:320px;
-    height:350px;
+    height:400px;
     margin: auto;
     padding: 10px;
-}
-.inputs-container{
-    margin:auto;
-}
-
-.inputs{
-    width: 60% auto;
-    border-radius: 5px;
-    border-style: none;
-    margin: 20px auto;
-    margin-bottom: 20px;
-    display: block;
-    width: 250px;
-    height:30px;
-    background-color: #f2f2f2;
-}
-.type-container{
-    display: block;
-    margin: auto;
-    width: 250px;
-    height:30px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border-style: none;
-    background-color: #f2f2f2;
-}
-.btn{
-    border-style: none;
-    border-radius: 50px;
-    margin: auto;
-    display: block;
-    width: 250px;
-    height:40px;
-    font-size: .9em;
-    font-style: none;
-    color: white;
-    background-color:#1e81ff;
 }
 .pricing-container{
 
     margin-top: 80px;
-   
     width:400px;
     color: white;
     font-style: none;
@@ -150,16 +114,45 @@ margin-right: 150px auto;
 }
 .singup-container{
     border-radius:  5px;
-    box-shadow:#5a52be;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: auto;
     background-color: white;
 }
 .singup-tilte{
-  font-style: none;
-  font-size: 1.3em;
-  text-align: center;
-  font-weight: lighter;
+    font-style: none;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: lighter;
+  }
+.inputs{
+    width: 80% ;
+    height: 40px;
+    font-size: .7em;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: none;
+    margin: 20px auto;
+    margin-bottom: 20px;
+    display: block;
+
+    background-color: #f2f2f2;
 }
+.type-container{
+    
+}
+.btn{
+    border-style: none;
+    border-radius: 50px;
+    margin: auto;
+    display: block;
+    width: 80%;
+    height:40px;
+    font-size: .9em;
+    font-style: none;
+    color: white;
+    background-color:#1e81ff;
+}
+
 .pricing-btn{
     width:150px;
     font-size: small;
@@ -169,4 +162,5 @@ margin-right: 150px auto;
     line-height: 1.5;
     display: inline-block;
     vertical-align: middle;
+    word-break: break-all;
 }
