@@ -8,7 +8,6 @@ html{
     margin: 0;
     background-image:linear-gradient(to bottom left ,#29c1dd,#5a52be );
     max-width: 100%;
-    height: 100%;
 }
 html, body{
     margin: 0;
@@ -45,7 +44,7 @@ html, body{
     color:white;
     text-decoration: none;
 }
-    .nav a:hover{
+.nav a:hover{
     background-color: rgba(255,255,255,.3);
     border-radius: 2px;
 }
@@ -66,8 +65,8 @@ background-color: none;
 }
 
 .left-nav{
-margin-left: 0;
-margin-right: 150px auto;
+    margin-left: 0;
+    margin-right: 150px auto;
 }
 
 .get-started-btn{
@@ -76,25 +75,20 @@ margin-right: 150px auto;
     border: 1px solid rgba(255,255,255,.3) ;
     border-radius: 5px;
     font-weight: lighter;
-    padding-left: 1em;
-    padding-right: 1em;
     padding-top:.5em;
     padding-bottom: .5em;
 }
 
 .main-container{
-   
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5%;
     width: 80%;
     margin: auto;
-   
 }
 
 .pricing-container,.singup-container{
-   
     font-size: 1.2em;
     width:320px;
     height:400px;
@@ -102,8 +96,10 @@ margin-right: 150px auto;
     padding: 10px;
 }
 .pricing-container{
-
+    height: 200px;
+    float:right;
     margin-top: 80px;
+   
     width:400px;
     color: white;
     font-style: none;
@@ -137,9 +133,8 @@ margin-right: 150px auto;
 
     background-color: #f2f2f2;
 }
-.type-container{
-    
-}
+
+
 .btn{
     border-style: none;
     border-radius: 50px;
@@ -154,9 +149,12 @@ margin-right: 150px auto;
 }
 
 .pricing-btn{
+    float: left;
+    display: block;
     width:150px;
     font-size: small;
-    align-items: left;
+    justify-items: left;
+    background-color: #00ca4c;
 }
 .pricing-p{
     line-height: 1.5;
