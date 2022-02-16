@@ -6,6 +6,7 @@
  
 html{
     background-image:linear-gradient(to bottom left ,#29c1dd,#5a52be );
+    background-g
     height: 100%;
 }
 html, body{
@@ -19,7 +20,7 @@ html, body{
     justify-content: center;
     align-items:left;
     border: 1px solid green;
-    width: 100%;
+    width: 90%;
     height: 10vh;
 }
 .main-nav{
@@ -46,7 +47,6 @@ html, body{
 }
 .left-nav{
     flex-grow: 2;
-
 }
 
 .right-nav{
@@ -107,20 +107,16 @@ html, body{
     background-color: white;
 }
 .singup-tilte{
-    font-size: 1.3em;
+    font-size: 30px;
     text-align: center;
     font-weight: lighter;
   }
 .inputs{
-    text-decoration: none;
-    width: 80% ;
     height: 40px;
-    font-size: .7em;
     font-weight: bold;
     border-radius: 5px;
     border-style: none;
     margin: 20px auto;
-    margin-bottom: 20px;
     display: block;
     background-color: #f2f2f2;
 }
@@ -131,8 +127,7 @@ html, body{
     border-radius: 50px;
     margin: auto;
     display: block;
-    width: 80%;
-    height:3em;
+    height: 40px;
     font-size: .9em;
     font-style: none;
     color: white;
