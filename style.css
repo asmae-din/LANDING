@@ -12,27 +12,19 @@ html, body{
     margin: 0;
     padding: 0;
 }
-
-.main-header{
-    position: sticky;
-    justify-content: center;
-    align-items:left;
-    border: 1px solid green;
-    height: 10vh;
-}
-.main-nav{
-    justify-content: center;
-    border: 1px solid red;
-    font-size: 1.1em;
-    font-weight:lighter;
-}
+ 
 .li-container{
-    border: 1px solid yellow;
+    margin-top: 30px;
+    position: sticky;
     display:flex;
     justify-content:center;
+    font-weight:lighter;
+
 }
 .nav li{
     display: inline;
+    margin-right: 10px;
+    
 }
 .nav a{
     padding: 10px;
@@ -44,7 +36,7 @@ html, body{
     border-radius: 2px;
 }
 .left-nav{
-    margin-left:300px;
+    margin-left:160px;
     flex-grow: 2;
 }
 
@@ -54,75 +46,67 @@ html, body{
 }
 
 .get-started-btn{
-    color:white;
+    color:#ffffff;
     border: 1px solid rgba(255,255,255,.3) ;
     border-radius: 5px;
     font-weight: lighter;
     padding-top:.5em;
     padding-bottom: .5em;
 }
-.section-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .main-container{
-    border: 1px solid;
-    display: flex;
-    flex-wrap: wrap;
+    display:flex;
+    padding:20px;
+    margin: 150px auto;
     justify-content: space-evenly;
-    align-items: center;
-    padding: 5%;
-    width: 70%;
-    height: 30%;
-    margin:0 5% 0 5%;
 }
 
-.pricing-container,.singup-container{
-    flex: 1 1;
-    width:35%;
-    height:25%;
-    margin: auto;
-}
 .pricing-container{
-    margin-top: .8em;
-    color: white;
+    margin-top: 50px;
+    width: 400px;
+    color:#ffffff;
     font-style: none;
 }
 .pricing-tilte{
-    font-size: 2.5rem;
+    font-size: 50px;
+    font-style: none;
+    font-weight:lighter;
     margin:0;
     padding:0;
 }
 .singup-container{
-    padding: 2em .5em 2em .5em;
+
+    width: 350px;
     border-radius:  5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #ffffff;
+    padding-bottom: 20px;
 }
 .singup-tilte{
     font-size: 30px;
+    color: #333;
     text-align: center;
-    font-weight: lighter;
   }
 .inputs{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    width:250px;
     height: 40px;
     font-weight: bold;
     border-radius: 5px;
     border-style: none;
-    margin: 20px auto;
-    display: block;
     background-color: #f2f2f2;
 }
-
-
 .btn{
     border-style: none;
     border-radius: 50px;
     margin: auto;
     display: block;
+    width: 250px;
     height: 40px;
-    font-size: .9em;
+    font-size: 18px;
     font-style: none;
     color: white;
     background-color:#1e81ff;
