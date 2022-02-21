@@ -8,13 +8,15 @@
  }
  
 html{
-    background-image:linear-gradient(to bottom left ,#29c1dd,#5a52be );
-    height: 100%;
+    background:linear-gradient(to bottom left ,#29c1dd,#5a52be );
+    background-repeat:no-repeat;
+    height: 100vh;
+
 }
 body{
-   width: 100%;
-   display:grid;
-   align-items: center;
+    width: 100%;
+    display:grid;
+    align-items: center;
 }
  
 .li-container{
@@ -59,14 +61,19 @@ body{
 }
 
 .main-container{
-    display:flex;
-    padding:20px;
+
+    justify-content: space-between;
+    width: 60%;
+    height: auto;
     margin: 65px auto;
-    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .pricing-container{
     margin-top: 50px;
+    margin-bottom: 50px;
     width: 400px;
     color:#ffffff;
     font-style: none;
@@ -123,6 +130,7 @@ body{
     display: block;
     font-size: small;
     justify-items: left;
+    margin: 20px 20px 20px 0;
     background-color: #00ca4c;
 }
 .pricing-p{
@@ -204,3 +212,41 @@ body{
     font-size: 18px;
 
 }
+
+
+/* pricing*/
+
+.pricing-warp{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.pricing-item{
+    width:20%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+.pricing-top{
+    width: 100%;
+    height: auto;
+    background: #1e81ff;
+    padding: 50px 0px 100px 10px;
+}
+.pricing-top h1{
+    
+}
+.pricing-midd{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: -80px auto 20px;
+    padding-top: 30px;
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px #aaa;
+}
+
