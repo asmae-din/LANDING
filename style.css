@@ -11,9 +11,7 @@ html{
     background:linear-gradient(to bottom left ,#29c1dd,#5a52be );
     background-repeat:no-repeat;
     background-size:contain;
-    height: 100%;
-    
-
+   
 }
 body{
     width: 100%;
@@ -31,7 +29,7 @@ body{
      width: 85%;
      height: 70px;
      margin: 0 auto;
-     justify-content: space-evenly;
+     justify-content: space-between;
  }
  .checkbtn{
      display: none;
@@ -53,44 +51,7 @@ body{
     background-color: rgba(255,255,255,.3);
     border-radius: 2px;
  }
- @media(max-with:1000px){
-     .checkbtn{
-         display: block;
-         width: 25px;
-         height: 25px;
-         cursor: pointer;
-         position: relative;
-         appearance: none;
-         -webkit-appearance:none;
-     }
-     .checkbtn::before{
-         content: '\f0C9';
-         font-weight: 700;
-         font-size: 1.9em;
-         color: #ffffff;
-     }
-     .checkbtn::checked::before{content: '\f00d';}
-     .nav ol{
-         position: absolute;
-         width: 100%;
-         flex-direction: column;
-         background:#333;
-         top: 80px; left: 0;
-         z-index: 100; 
-         padding: 1.2em;
-         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-         transition: clip-path .4s;
-     }
-     .checkbtn::checked ~ ol{ clip-path: polygon(0 0, 100% 100%, 0 100%);}
-     .nav ol::before{
-         content: '';
-         position: absolute;
-         bottom: 0; left: 0;
-         width: 100%;
-         height: 5px;
-         background:green;
-     }
- }
+
 /*main*/
 .main-container{
 
@@ -177,7 +138,7 @@ body{
 .contact-in{
     width: 60%;
     height: auto;
-    margin: 200px auto;
+    margin:5% auto;
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
@@ -250,6 +211,7 @@ body{
 /* pricing*/
 
 .pricing-warp{
+    margin-top: 50px;
     width: 100%;
     height: auto;
     text-align: center;
@@ -263,6 +225,12 @@ body{
     border-radius: 20px;
     overflow: hidden;
     padding-bottom: 50px;
+    transition: .5s;
+}
+.pricing-item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 5px 5px 2px #999;
+    transition: .5s;
 }
 .pricing-top{
     width: 100%;
@@ -271,7 +239,11 @@ body{
     padding: 50px 0px 100px 10px;
 }
 .pricing-top h1{
-    
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-size: 24px;
+    text-transform: uppercase;
 }
 .pricing-midd{
     width: 140px;
@@ -281,5 +253,53 @@ body{
     padding-top: 30px;
     background: #fff;
     box-shadow: 0px 0px 5px 0px #aaa;
+    transition: .5s;
+
+}
+.pricing-item:hover .pricing-midd{
+    transform: rotate(360deg);
+    transition: .5s;
+}
+.pricing-midd h2{
+    color: #666;
+    letter-spacing: 1px;
+    font: weight 600;
+    font-size: 40px;
 }
 
+.pricing-midd p{
+    color: #999;
+    font: weight 600;
+    
+}
+
+.pricing-item ul{
+padding: 0;
+margin: 0;
+}
+.pricing-item ul li{
+
+    list-style: none;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.pricing-item a{
+    
+    font-size: 20px;
+    background: #fff;
+    border: 2px solid #1e81ff;
+    border-radius: 50px;
+    padding: 6px 15px;
+    line-height: 80px;
+    text-decoration: none !important;
+    color: #1e81ff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.pricing-item:hover a{
+    background: #1e81ff;
+    color: #ffffff;
+    transition: .5s;
+}
