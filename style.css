@@ -11,7 +11,7 @@ html{
     background:linear-gradient(to bottom left ,#29c1dd,#5a52be );
     background-repeat:no-repeat;
     background-size:contain;
-   
+    height: 100%;
 }
 body{
     width: 100%;
@@ -66,8 +66,8 @@ body{
 }
 
 .pricing-container{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
     width: 400px;
     color:#ffffff;
     font-style: none;
@@ -225,13 +225,9 @@ body{
     border-radius: 20px;
     overflow: hidden;
     padding-bottom: 50px;
-    transition: .5s;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.pricing-item:hover{
-    transform: scale(1.1);
-    box-shadow: 0px 5px 5px 2px #999;
-    transition: .5s;
-}
+
 .pricing-top{
     width: 100%;
     height: auto;
@@ -253,13 +249,9 @@ body{
     padding-top: 30px;
     background: #fff;
     box-shadow: 0px 0px 5px 0px #aaa;
-    transition: .5s;
 
 }
-.pricing-item:hover .pricing-midd{
-    transform: rotate(360deg);
-    transition: .5s;
-}
+
 .pricing-midd h2{
     color: #666;
     letter-spacing: 1px;
@@ -302,4 +294,33 @@ margin: 0;
     background: #1e81ff;
     color: #ffffff;
     transition: .5s;
+}
+/*reviews*/
+
+.reviews-warp{
+    width: 100%;
+    height: auto;
+
+}
+.reviews-in{
+    width: 100%;
+    height: auto;
+    padding: 0px 20px 50px 20px;
+    text-align: center;
+    border: 1px solid #999;
+}
+.reviews-in-image{
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    position: relative;
+    top: -60px;
+}
+.reviews-in-image img{
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 80%;
 }
