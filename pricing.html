@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-        <header class="nav">
-            <input type="checkbow" id="check">
+        <nav class="nav">
+            <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <span class="material-icons">list</span>
             </label>
@@ -24,56 +24,36 @@
                 <li><a href="./faq.html">FAQ</a></li>
                 <li><a href="#" class="active">Get Started</a></li>
             </ul>
-        </header>
+        </nav>
+        <section class="warp">
             <div class="pricing-warp">
-                <div class="pricing-item">
-                    <div class="pricing-top">
-                        <h1>first</h1>
+                <input type="radio" name="slider" id="tab-1">
+                <input type="radio" name="slider" id="tab-2">
+                <input type="radio" name="slider" id="tab-3">
+                <header>
+                    <label for="tab-1" class="tab-1">Basic</label>
+                    <label for="tab-2" class="tab-2" checked>Standar</label>
+                    <label for="tab-3" class="tab-3">Premuim</label>
+                    <div class="slider"></div>
+                </header>
+                <div class="cards-area">
+                    <div class="cards">
+                        <div class="row">
+                            <div class="price-details">
+                                <span class="price">20</span>
+                                <p>For beginner use </p>
+                            </div>
+                            <ul class="features">
+                                <li><span class="material-icons">done</span><span>Lorem ipsum dolor sit</span></li>
+                                <li><span class="material-icons">done</span><span>Lorem ipsum dolor sit</span></li>
+                                <li><span class="material-icons">done</span><span>Lorem ipsum dolor sit</span></li>
+                                <li><span class="material-icons">done</span><span>Lorem ipsum dolor sit</span></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="pricing-midd">
-                        <h2>$ 59</h2>
-                        <p>Per Month</p>
-                    </div>
-                    <ul>
-                        <li>Lorem, ipsum dolor</li>
-                        <li>Lorem, ipsum dolor</li>
-                        <li>Lorem, ipsum dolor</li>
-                        <li>Lorem, ipsum dolor</li>
-                    </ul>
-                    <a href="">Get Started</a>
-                </div>
-                <div class="pricing-item">
-                    <div class="pricing-top">
-                        <h1>second</h1>
-                    </div>
-                    <div class="pricing-midd">
-                        <h2>$ 59</h2>
-                        <p>Per Month</p>
-                    </div>
-                    <ul>
-                        <li>Lorem, ipsum dolor</li>
-                        <li>Lorem, ipsum dolor</li>
-                        <li>Lorem, ipsum dolor</li>
-                        <li>Lorem, ipsum dolor</li>
-                    </ul>
-                    <a href="">Get Started</a>
-                </div>
-                <div class="pricing-item">
-                    <div class="pricing-top">
-                        <h1>third</h1>
-                    </div>
-                    <div class="pricing-midd">
-                        <h2>$ 59</h2>
-                        <p>Per Month</p>
-                    </div>
-                    <ul>
-                        <li>Lorem, ipsum dolor</li>
-                        <li>Lorem, ipsum dolor</li>
-                        <li>Lorem, ipsum dolor</li>
-                        <li>Lorem, ipsum dolor</li>
-                    </ul>
-                    <a href="">Get Started</a>
+                    <button>Chose plan</button>
                 </div>
             </div>
+        </section>
     </body>
 </html>
