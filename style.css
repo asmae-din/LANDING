@@ -18,7 +18,7 @@ html{
 /*navbar*/
 
 nav{
-    height: 80px;
+    height: 60px;
     width: 100%;
   }
   
@@ -29,16 +29,16 @@ nav{
     padding: 0 100px;
     font-weight: bold;
   }
-  .nav ul{
+  nav ul{
     float: right;
     margin-right: 20px;
   }
-  .nav ul li{
+  nav ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
   }
-  .nav ul li a{
+  nav ul li a{
     color: white;
     font-size: 17px;
     padding: 7px 13px;
@@ -47,7 +47,7 @@ nav{
   }
   a.active,a:hover{
     background:rgba(275, 275, 275, 0.3);
-    transition: .5s;
+    transition: 0.5s;
   }
   .checkbtn{
     font-size: 30px;
@@ -63,8 +63,9 @@ nav{
   }
 
 
-/**main**/
+/**Index**/
 .main-container{
+
     justify-content: space-between;
     width: 60%;
     height: auto;
@@ -76,13 +77,15 @@ nav{
 }
 
 .pricing-container{
+
     margin-top: 5%;
     margin-bottom: 5%;
     width: 400px;
-    color:#ffffff;
+    color:#fff;
     font-style: none;
 }
 .pricing-tilte{
+
     font-size: 50px;
     font-style: none;
     font-weight:lighter;
@@ -92,14 +95,14 @@ nav{
 .singup-container{
    
     width: 350px;
-    border-radius:  5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #ffffff;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
 }
 .singup-tilte{
     font-size: 30px;
+    padding-bottom: 10px;
     color: #333;
     text-align: center;
   }
@@ -225,7 +228,7 @@ nav{
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 90vh;
+    min-height: 80vh;
     }
 
 .pricing-warp{
@@ -549,62 +552,181 @@ padding: 20px 0;
 }
 
 @media (max-width: 952px){
-    .logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    .nav ul li a{
-      font-size: 16px;
-    }
+  .logo{
+    font-size: 30px;
+    padding-left: 50px;
   }
-  @media (max-width: 858px){
-    
-    .checkbtn{
-      display: block;
-    }
-     ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #2c3e50;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-    }
-    .nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    .nav ul li a{
-      font-size: 20px;
-    }
-    a:hover,a.active{
-      background: none;
-      color: #0082e6;
-    }
-    #check:checked ~  ul{
-        left: 0;
-      }
-    .features-top{
-        padding: 0;
-    }
-    .features-container{
-        grid-template-columns: 1fr;
-    }
-   
+  .nav ul li a{
+    font-size: 16px;
   }
+}
+@media (max-width: 858px){
+  
+  .checkbtn{
+    display: block;
+  }
+   ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  .nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~  ul{
+      left: 0;
+    }
+  .features-top{
+      padding: 0;
+  }
+  .features-container{
+      grid-template-columns: 1fr;
+  }
+ 
+}
 
 
+/* FAQ */
+.faq{
+  margin: 0;
+  padding: 0;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 80vh;
+}
+.faq-warp{
+  max-width: 600px;
+  padding: 0 20px;
+}
+.faq-header{
+  letter-spacing: 1px;
+  margin:0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.faq-header h1{
+  font-size: 35px;
+  font-weight: 500;
+  color: #fff;
+  padding: 0 20px;
+}
+.faq-header span{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 2px;
 
+}
 
+.faq-warp .parent-tab,
+.faq-warp .child-tab{
+  margin-bottom: 8px;
+  border-radius: 3px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .18);
 
+}
+.faq-warp .parent-tab label,
+.faq-warp .child-tab label{
+  background-color:#00ca4c;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius:3px;
+  position: relative;
+  z-index: 99;
+  transition: all 0.3s ease;
+}
 
+.faq-titel{
+  color: #fff;
+  font-size:18px;
+  font-weight: 500;
+  text-shadow: 0 -1px 1px #00ca4c;
+}
+  
+.faq-warp .child-tab label .faq-titel{
+  font-size: 17px;
+}
 
+.parent-tab label .icon{
+  position: relative;
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+  color:#00ca4c;
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+  text-shadow: 0 -1px 1px #00ca4c;
+}
+.faq-warp .child-tab label .icon{
+  height: 27px;
+  width: 27px;
+}
+.parent-tab label .icon span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.parent-tab input:checked ~ label .icon span:before,
+.child-tab input:checked ~ label .icon span:before{
+  content: '\e15b';
+}
 
+.faq-warp .parent-tab .faq-content,
+.faq-warp .child-tab .sub-content{
+ max-height: 0px;
+ overflow: hidden;
+ background: #fff;
+ border-radius: 0 0 3px 3px;
+ transition: all 0.4s ease;
+}
+.parent-tab input:checked ~ .faq-content,
+.child-tab  input:checked ~ .sub-content{
+  max-height: 100vh;
+}
 
+.tab-3 input:checked ~ .faq-content{
+  padding: 15px 20px;
+}
 
+.parent-tab .faq-content p,
+.child-tab .sub-content p{
+  font-size: 16px;
+  padding: 15px 20px;
+}
+
+.child-tab .sub-content p{
+  font-size: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+  display: none;
+}
 
 
 
