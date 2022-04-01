@@ -63,13 +63,13 @@ nav{
   }
 
 
-/**Index**/
+/**HOME**/
 .main-container{
 
     justify-content: space-between;
     width: 60%;
     height: auto;
-    margin: 65px auto;
+    margin: 100px auto;
     margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -82,12 +82,10 @@ nav{
     margin-bottom: 5%;
     width: 400px;
     color:#fff;
-    font-style: none;
 }
 .pricing-tilte{
 
     font-size: 50px;
-    font-style: none;
     font-weight:lighter;
     margin:0;
     padding:0;
@@ -148,10 +146,11 @@ nav{
 }
 
 /*contact us*/
+
 .contact-in{
     width: 60%;
     height: auto;
-    margin:5% auto;
+    margin:10% auto;
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
@@ -219,8 +218,6 @@ nav{
     font-size: 18px;
 
 }
-
-
 /* pricing*/
 
 .warp{
@@ -313,7 +310,7 @@ header .slider{
 }
 
 .cards .row-1{
-    transition: all 0,3s ease;
+    transition: all .3s ease;
 }
 #tab-1:checked ~ .cards-area .cards .row-1{
     margin-left: 0%;
@@ -389,9 +386,10 @@ header .slider{
   color: #fff;
   cursor: pointer;
   margin-top: 20px;
-    background:linear-gradient(170deg,#29c1dd,#5a52be );
-    transition: transform 0.3s ease;
+  background:linear-gradient(170deg,#29c1dd,#5a52be );
+  transition: transform 0.3s ease;
 }
+
 .pricing-warp button:hover{
     transform: scale(0.98);
 }
@@ -460,7 +458,7 @@ header .slider{
 }
 .profile{
     display: flex;
-    flex-direction: center;
+    flex-direction:column;
 }
 .name-user{
     display: flex;
